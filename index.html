@@ -1854,6 +1854,25 @@
     .cta { padding: 60px 28px; }
     .price-amount { font-size: 34px; }
   }
+
+  /* ─── BILINGUAL TOGGLE ─── */
+  .en-text { display: none; }
+  .my-text { display: inline; }
+  body.lang-en .en-text { display: inline; }
+  body.lang-en .my-text { display: none; }
+  .lang-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--ink);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+  .lang-btn:hover { background: rgba(255,255,255,0.15); }
+
 </style>
 </head>
 <body>
@@ -1874,11 +1893,14 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#pubg-bot">Game Bot</a></li>
+      <li><a href="#star-bot">Star Bot</a></li>
       <li><a href="#games">Games</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#how">How It Works</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="nav-cta">Contact →</a></li>
+      <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">🇬🇧 EN</button>
+      <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="nav-cta">Contact →</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -1922,7 +1944,7 @@
       <p class="promo-sub">
         New Customers များအတွက် အထူးလျှော့စျေးနှုန်း — Plan အားလုံးတွင် ပထမလအတွက် <strong>၁၀% လျှော့စျေး</strong> ရရှိနိုင်ပါသည်။
       </p>
-      <span class="promo-limit">Limited · First 50 Customers Only</span>
+      <span class="promo-limit">Limited · First <s>50</s> 39 Customers Only</span>
     </div>
     <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="promo-cta">
       Claim Now <span class="arrow">→</span>
@@ -2015,10 +2037,110 @@
     </div>
   </section>
 
+  <!-- PUBG UC & MLBB BAN SERVER BOT -->
+  <section class="section" id="pubg-bot">
+    <div class="section-head">
+      <span class="section-num">03 /</span>
+      <span class="section-icon">🎮</span>
+      <h2 class="section-title">
+        <span class="my-text">Pubg UC &amp; Mlbb Ban Server Bot</span>
+        <span class="en-text">Pubg UC &amp; Mlbb Ban Server Bot</span>
+      </h2>
+      <span class="section-sub">
+        <span class="my-text">AUTOMATED GAME TOPUP BOT</span>
+        <span class="en-text">AUTOMATED GAME TOPUP BOT</span>
+      </span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-tag pink">Personal Use</span>
+        <h3 class="card-title">Personal Bot</h3>
+        <div class="price-row">
+          <span class="price-amount">50,000</span>
+          <span class="price-currency">MMK</span>
+          <span class="price-period">/ ၁ လ</span>
+          <span class="price-usd">≈ $15</span>
+        </div>
+        <p class="card-desc">
+          <span class="my-text">ကိုယ်ပိုင်နာမည်ဖြင့် Bot အသုံးပြုနိုင်ပြီး Game ပေါင်း 200 ကျော်မှ မိမိအသုံးပြုလိုသည့် Game ကို ရွေးချယ်နိုင်ပါသည်။ Binance အသုံးပြုတတ်ပါက Game Item များကို ဈေးချိုစွာ ရရှိနိုင်ပါသည်။</span>
+          <span class="en-text">Use the bot under your own name. Choose from 200+ games to topup. If you use Binance, you can get game items at cheaper rates.</span>
+        </p>
+        <p class="card-note" style="margin-top:10px;font-size:12px;color:var(--accent-3);">
+          <span class="my-text">🎯 Game ပေါင်း 200+ ရွေးချယ်နိုင် | Binance ဖြင့် ဈေးချိုသည်</span>
+          <span class="en-text">🎯 200+ Games Available | Cheaper with Binance</span>
+        </p>
+      </div>
+
+      <div class="card featured">
+        <span class="featured-ribbon">★ Recommended</span>
+        <span class="card-tag pink">Reseller Use</span>
+        <h3 class="card-title">Reseller Bot</h3>
+        <div class="price-row">
+          <span class="price-amount">80,000</span>
+          <span class="price-currency">MMK</span>
+          <span class="price-period">/ ၁ လ</span>
+          <span class="price-usd">≈ $30</span>
+        </div>
+        <p class="card-desc">
+          <span class="my-text">User များအား Fees ဖြင့် ပြန်လည်ငှားရမ်း အသုံးပြုလိုသူများအတွက် ဖြစ်ပါသည်။ Game ပေါင်း 200 ကျော်မှ မိမိအသုံးပြုလိုသည့် Game ကို ရွေးချယ်နိုင်ပြီး Binance အသုံးပြုတတ်ပါက ဈေးချိုစွာ ရရှိနိုင်ပါသည်။</span>
+          <span class="en-text">Rent the bot to other users with fees and build income. Choose from 200+ games. Using Binance gives you access to cheaper game item rates.</span>
+        </p>
+        <p class="card-note" style="margin-top:10px;font-size:12px;color:var(--accent-3);">
+          <span class="my-text">🎯 Game ပေါင်း 200+ ရွေးချယ်နိုင် | Binance ဖြင့် ဈေးချိုသည်</span>
+          <span class="en-text">🎯 200+ Games Available | Cheaper with Binance</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELEGRAM STAR TOPUP BOT -->
+  <section class="section" id="star-bot">
+    <div class="section-head">
+      <span class="section-num">04 /</span>
+      <span class="section-icon">⭐</span>
+      <h2 class="section-title">Telegram Star Topup Bot</h2>
+      <span class="section-sub">TON BLOCKCHAIN PAYMENT</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-tag pink">Personal</span>
+        <h3 class="card-title">Personal Bot</h3>
+        <div class="price-row">
+          <span class="price-amount">50,000</span>
+          <span class="price-currency">MMK</span>
+          <span class="price-period">/ ၁ လ</span>
+          <span class="price-usd">≈ $15</span>
+        </div>
+        <p class="card-desc">
+          <span class="my-text">Client ၁ ဦးတည်းသာ အသုံးပြုနိုင်သော Plan ဖြစ်ပါသည်။ TON Address ဖြင့် Telegram Star Topup လုပ်ဆောင်နိုင်ပြီး Bot မှ TON Coin ကိုလည်း ပြောင်းရောင်းချနိုင်မည်ဖြစ်ပါသည်။ Bot 24/7 အလိုအလျောက် လည်ပတ်မည်ဖြစ်သည်။</span>
+          <span class="en-text">Single-owner plan for 1 client only. Buy & sell Telegram Stars via TON Address, plus the bot can convert and trade TON Coins automatically. Bot runs 24/7.</span>
+        </p>
+      </div>
+
+      <div class="card featured">
+        <span class="featured-ribbon">★ Recommended</span>
+        <span class="card-tag pink">Reseller</span>
+        <h3 class="card-title">Reseller Bot</h3>
+        <div class="price-row">
+          <span class="price-amount">80,000</span>
+          <span class="price-currency">MMK</span>
+          <span class="price-period">/ ၁ လ</span>
+          <span class="price-usd">≈ $30</span>
+        </div>
+        <p class="card-desc">
+          <span class="my-text">တခြားသူများကို Fees ဖြင့် ပြန်လည်ငှားရမ်း အသုံးပြုလိုသူများအတွက် ဖြစ်ပါသည်။ TON Address ဖြင့် Telegram Star Topup ပြုလုပ်နိုင်ပြီး Bot မှ TON Coin ကိုလည်း ပြောင်းရောင်းချနိုင်မည်ဖြစ်သည်။ Reseller Network တည်ဆောက်နိုင်ပါသည်။</span>
+          <span class="en-text">Rent your bot to others with fees and build a Reseller Network. Supports Telegram Star Topup via TON Address — bot can also convert and trade TON Coins. 24/7 operation.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- SMILE ONE API -->
   <section class="section">
     <div class="section-head">
-      <span class="section-num">03 /</span>
+      <span class="section-num">05 /</span>
       <span class="section-icon">🔑</span>
       <h2 class="section-title">Smile One API</h2>
       <span class="section-sub">DIRECT API INTEGRATION</span>
@@ -2093,10 +2215,30 @@
     </div>
   </section>
 
+
+  <!-- OTHER BOTS NOTICE -->
+  <section class="promo" style="margin: 0 0 40px 0; background: linear-gradient(135deg, rgba(200,255,62,0.06), rgba(62,232,255,0.06)); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
+    <div class="promo-content" style="flex-direction: column; gap: 12px;">
+      <span class="promo-badge" style="background: var(--accent-3); color: #07070c;">🤖 Custom Bots</span>
+      <h2 class="promo-headline" style="font-size: 1.3rem;">
+        <span class="my-text">တခြား Bot များ လိုချင်တာရှိပါသလား?</span>
+        <span class="en-text">Looking for Other Custom Bots?</span>
+      </h2>
+      <p class="promo-sub">
+        <span class="my-text">မိမိ လိုချင်သော Bot အမျိုးအစားများ ရှိပါက <strong>@EscanorX_Official</strong> သို့ လာရောက် မေးမြန်း စုံစမ်း ဆွေးနွေးနိုင်ပါသည်။</span>
+        <span class="en-text">If you need any custom bot type, feel free to visit <strong>@EscanorX_Official</strong> on Telegram to inquire and discuss your requirements.</span>
+      </p>
+    </div>
+    <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="promo-cta">
+      <span class="my-text">ဆက်သွယ်ရန် →</span>
+      <span class="en-text">Contact Us →</span>
+    </a>
+  </section>
+
   <!-- SUPPORTED GAMES -->
   <section class="section" id="games">
     <div class="section-head">
-      <span class="section-num">04 /</span>
+      <span class="section-num">09 /</span>
       <span class="section-icon">🎮</span>
       <h2 class="section-title">Supported Games</h2>
       <span class="section-sub">200+ TITLES</span>
@@ -2210,7 +2352,7 @@
   <!-- WHY CHOOSE US -->
   <section class="section" id="features">
     <div class="section-head">
-      <span class="section-num">05 /</span>
+      <span class="section-num">06 /</span>
       <span class="section-icon">💎</span>
       <h2 class="section-title">Why Choose Us</h2>
       <span class="section-sub">6 KEY ADVANTAGES</span>
@@ -2282,7 +2424,7 @@
   <!-- HOW IT WORKS -->
   <section class="section" id="how">
     <div class="section-head">
-      <span class="section-num">06 /</span>
+      <span class="section-num">07 /</span>
       <span class="section-icon">⚡</span>
       <h2 class="section-title">How It Works</h2>
       <span class="section-sub">4 SIMPLE STEPS</span>
@@ -2334,7 +2476,7 @@
   <!-- PAYMENT METHODS -->
   <section class="section" id="payment">
     <div class="section-head">
-      <span class="section-num">07 /</span>
+      <span class="section-num">08 /</span>
       <span class="section-icon">💳</span>
       <h2 class="section-title">Payment Methods</h2>
       <span class="section-sub">SECURE & TRUSTED</span>
@@ -2717,6 +2859,21 @@
   }
 })();
 </script>
+
+
+  <script>
+    function toggleLang() {
+      const body = document.body;
+      const btn = document.getElementById('langBtn');
+      if (body.classList.contains('lang-en')) {
+        body.classList.remove('lang-en');
+        btn.textContent = '🇬🇧 EN';
+      } else {
+        body.classList.add('lang-en');
+        btn.textContent = '🇲🇲 MY';
+      }
+    }
+  </script>
 
 </body>
 </html>
