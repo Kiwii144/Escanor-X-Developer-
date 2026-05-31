@@ -1856,10 +1856,10 @@
   }
 
   /* ─── BILINGUAL TOGGLE ─── */
-  .en-text { display: none; }
-  .my-text { display: inline; }
-  body.lang-en .en-text { display: inline; }
-  body.lang-en .my-text { display: none; }
+  .en-text { display: none !important; }
+  .my-text { display: inline !important; }
+  body.lang-en .en-text { display: inline !important; }
+  body.lang-en .my-text { display: none !important; }
   .lang-btn {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.18);
@@ -1899,7 +1899,7 @@
       <li><a href="#features">Features</a></li>
       <li><a href="#how">How It Works</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">🇬🇧 EN</button>
+      <li><button class="lang-btn" id="langBtn">🇬🇧 EN</button>
       <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="nav-cta">Contact →</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -1928,26 +1928,26 @@
       <span class="gradient">Topup Business.</span>
     </h1>
     <p class="hero-greeting reveal d2">
-      မင်္ဂလာပါခင်ဗျာ <span class="wave">🙏</span>
+      <span class="my-text">မင်္ဂလာပါခင်ဗျာ <span class="wave">🙏</span></span><span class="en-text">Welcome <span class="wave">👋</span></span>
     </p>
     <p class="hero-desc reveal d3">
-      Game Topup Service များအတွက် Plan များကို သပ်သပ်ရပ်ရပ် အောက်ပါအတိုင်း
-      စီစဉ်ပေးထားပါတယ်။ လုပ်ငန်းအရွယ်အစားနဲ့ လိုအပ်ချက်အလိုက် သင့်တော်တဲ့ Plan ကို ရွေးချယ်နိုင်ပါတယ်။
+      <span class="my-text">Game Topup Service များအတွက် Plan များကို သပ်သပ်ရပ်ရပ် အောက်ပါအတိုင်း
+      စီစဉ်ပေးထားပါတယ်။ လုပ်ငန်းအရွယ်အစားနဲ့ လိုအပ်ချက်အလိုက် သင့်တော်တဲ့ Plan ကို ရွေးချယ်နိုင်ပါတယ်။</span><span class="en-text">We offer a range of Game Topup Service plans, neatly organized below. Choose the plan that best fits your business size and needs.</span>
     </p>
   </section>
 
   <!-- PROMO BANNER -->
   <section class="promo">
     <div class="promo-content">
-      <span class="promo-badge">Limited Time Offer</span>
-      <h2 class="promo-headline">First Month <span class="pct">10% OFF</span></h2>
+      <span class="promo-badge"><span class="my-text">အချိန်ကန့်သတ် ကမ်းလှမ်းချက်</span><span class="en-text">Limited Time Offer</span></span>
+      <h2 class="promo-headline"><span class="my-text">ပထမလ <span class="pct">၁၀% လျှော့</span></span><span class="en-text">First Month <span class="pct">10% OFF</span></span></h2>
       <p class="promo-sub">
-        New Customers များအတွက် အထူးလျှော့စျေးနှုန်း — Plan အားလုံးတွင် ပထမလအတွက် <strong>၁၀% လျှော့စျေး</strong> ရရှိနိုင်ပါသည်။
+<span class="my-text">New Customers များအတွက် အထူးလျှော့စျေးနှုန်း — Plan အားလုံးတွင် ပထမလအတွက် <strong>၁၀% လျှော့စျေး</strong> ရရှိနိုင်ပါသည်။</span><span class="en-text">Special discount for new customers — get <strong>10% OFF</strong> on the first month for all plans.</span>
       </p>
-      <span class="promo-limit">Limited · First <s>50</s> 39 Customers Only</span>
+      <span class="promo-limit"><span class="my-text">ကန့်သတ်ချက် · ဖောက်သည် <s>၅၀</s> ၃၉ ဦးသာ</span><span class="en-text">Limited · First <s>50</s> 39 Customers Only</span></span>
     </div>
     <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="promo-cta">
-      Claim Now <span class="arrow">→</span>
+      <span class="my-text">ယခုပင် ရယူမည် <span class="arrow">→</span></span><span class="en-text">Claim Now <span class="arrow">→</span></span>
     </a>
   </section>
 
@@ -1956,8 +1956,8 @@
     <div class="section-head">
       <span class="section-num">01 /</span>
       <span class="section-icon">💻</span>
-      <h2 class="section-title">Website Plan</h2>
-      <span class="section-sub">FULL-STACK TOPUP SYSTEM</span>
+      <h2 class="section-title"><span class="my-text">Website Plan</span><span class="en-text">Website Plan</span></h2>
+      <span class="section-sub"><span class="my-text">ဝဘ်ဆိုက် Topup System အပြည့်အစုံ</span><span class="en-text">FULL-STACK TOPUP SYSTEM</span></span>
     </div>
 
     <div class="grid">
@@ -1967,12 +1967,12 @@
         <div class="price-row">
           <span class="price-amount">100,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $25</span>
         </div>
         <p class="card-desc">
-          အခြေခံ Topup System — အသုံးပြုရလွယ်ကူပြီး စတင်သူများအတွက် သင့်တော်ပါတယ်။
-          ရိုးရှင်းပြီး လျင်မြန်တဲ့ Setup ဖြင့် ချက်ချင်း လုပ်ငန်းစတင်နိုင်ပါတယ်။
+<span class="my-text">အခြေခံ Topup System — အသုံးပြုရလွယ်ကူပြီး စတင်သူများအတွက် သင့်တော်ပါတယ်။ ရိုးရှင်းပြီး လျင်မြန်တဲ့ Setup ဖြင့် ချက်ချင်း လုပ်ငန်းစတင်နိုင်ပါတယ်။</span>
+          <span class="en-text">Basic Topup System — easy to use and perfect for beginners. Simple, fast setup so you can start your business immediately.</span>
         </p>
       </div>
 
@@ -1983,12 +1983,12 @@
         <div class="price-row">
           <span class="price-amount">200,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $50</span>
         </div>
         <p class="card-desc">
-          Admin Panel + Automation System + Full Features ပါဝင်ပြီး လုပ်ငန်းအပြည့်အဝ
-          အသုံးပြုနိုင်ပါတယ်။ Professional လုပ်ငန်းရှင်များအတွက် အကောင်းဆုံးရွေးချယ်မှု။
+<span class="my-text">Admin Panel + Automation System + Full Features ပါဝင်ပြီး လုပ်ငန်းအပြည့်အဝ အသုံးပြုနိုင်ပါတယ်။ Professional လုပ်ငန်းရှင်များအတွက် အကောင်းဆုံးရွေးချယ်မှု။</span>
+          <span class="en-text">Includes Admin Panel, Automation System & Full Features for a complete business setup. The best choice for professional operators.</span>
         </p>
       </div>
     </div>
@@ -1999,8 +1999,8 @@
     <div class="section-head">
       <span class="section-num">02 /</span>
       <span class="section-icon">🤖</span>
-      <h2 class="section-title">Smile One Bot</h2>
-      <span class="section-sub">AUTOMATED BOT SERVICE</span>
+      <h2 class="section-title"><span class="my-text">Smile One Bot</span><span class="en-text">Smile One Bot</span></h2>
+      <span class="section-sub"><span class="my-text">အလိုအလျောက် Bot ဝန်ဆောင်မှု</span><span class="en-text">AUTOMATED BOT SERVICE</span></span>
     </div>
 
     <div class="grid">
@@ -2010,12 +2010,12 @@
         <div class="price-row">
           <span class="price-amount">50,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $15</span>
         </div>
         <p class="card-desc">
-          ကိုယ်ပိုင်နာမည်ဖြင့် Bot အသုံးပြုနိုင်ပါတယ်။ Customer များကို ပိုမိုလျှင်မြန်စွာ
-          ဝန်ဆောင်မှု ပေးနိုင်ပြီး Bot မှာ အလိုအလျောက် Topup လုပ်ဆောင်နိုင်ပါတယ်။
+<span class="my-text">ကိုယ်ပိုင်နာမည်ဖြင့် Bot အသုံးပြုနိုင်ပါတယ်။ Customer များကို ပိုမိုလျှင်မြန်စွာ ဝန်ဆောင်မှု ပေးနိုင်ပြီး Bot မှာ အလိုအလျောက် Topup လုပ်ဆောင်နိုင်ပါတယ်။</span>
+          <span class="en-text">Use the bot under your own name. Serve customers faster and let the bot handle Topup orders automatically.</span>
         </p>
       </div>
 
@@ -2026,12 +2026,12 @@
         <div class="price-row">
           <span class="price-amount">80,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $20</span>
         </div>
         <p class="card-desc">
-          User များအား Fees ဖြင့် ပြန်လည်ငှားရမ်း အသုံးပြုလိုသူများအတွက် ရည်ရွယ်ထားပါတယ်။
-          ဝင်ငွေတိုးပွားစေမယ့် Reseller Network တည်ဆောက်နိုင်ပါတယ်။
+<span class="my-text">User များအား Fees ဖြင့် ပြန်လည်ငှားရမ်း အသုံးပြုလိုသူများအတွက် ရည်ရွယ်ထားပါတယ်။ ဝင်ငွေတိုးပွားစေမယ့် Reseller Network တည်ဆောက်နိုင်ပါတယ်။</span>
+          <span class="en-text">Designed for those who want to rent the bot to other users with fees. Build a profitable Reseller Network and grow your income.</span>
         </p>
       </div>
     </div>
@@ -2059,7 +2059,7 @@
         <div class="price-row">
           <span class="price-amount">50,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $15</span>
         </div>
         <p class="card-desc">
@@ -2079,7 +2079,7 @@
         <div class="price-row">
           <span class="price-amount">80,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $30</span>
         </div>
         <p class="card-desc">
@@ -2110,7 +2110,7 @@
         <div class="price-row">
           <span class="price-amount">50,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $15</span>
         </div>
         <p class="card-desc">
@@ -2126,7 +2126,7 @@
         <div class="price-row">
           <span class="price-amount">80,000</span>
           <span class="price-currency">MMK</span>
-          <span class="price-period">/ ၁ လ</span>
+          <span class="price-period"><span class="my-text">/ ၁ လ</span><span class="en-text">/ mo</span></span>
           <span class="price-usd">≈ $30</span>
         </div>
         <p class="card-desc">
@@ -2143,17 +2143,17 @@
       <span class="section-num">05 /</span>
       <span class="section-icon">🔑</span>
       <h2 class="section-title">Smile One API</h2>
-      <span class="section-sub">DIRECT API INTEGRATION</span>
+      <span class="section-sub"><span class="my-text">တိုက်ရိုက် API ချိတ်ဆက်မှု</span><span class="en-text">DIRECT API INTEGRATION</span></span>
     </div>
 
     <div class="api-grid">
       <!-- Box 1: Monthly Plan -->
       <div class="api-block">
-        <h3>Monthly Plan</h3>
+        <h3><span class="my-text">လစဉ် Plan</span><span class="en-text">Monthly Plan</span></h3>
 
         <div class="fee-line">
           <div class="fee-label">
-            စျေးနှုန်း
+            <span class="my-text">စျေးနှုန်း</span><span class="en-text">Price</span>
             <small>MONTHLY / PER MONTH</small>
           </div>
           <div class="fee-amount">50,000 <span class="mmk">MMK</span><span class="fee-usd">≈ $15</span></div>
@@ -2162,7 +2162,7 @@
         <ul style="list-style: none; padding: 0; margin: 20px 0 0 0; display: flex; flex-direction: column; gap: 10px;">
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
-            API Key တစ်ခု (သင့် System အတွက်)
+            <span class="my-text">API Key တစ်ခု (သင့် System အတွက်)</span><span class="en-text">1 API Key (for your system)</span>
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
@@ -2170,11 +2170,11 @@
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
-            Player ID + Double Diamond Check
+            <span class="my-text">Player ID + Double Diamond Check</span><span class="en-text">Player ID + Double Diamond Check</span>
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
-            Product List API (Games 10+)
+            <span class="my-text">Product List API (Games 10+)</span><span class="en-text">Product List API (10+ Games)</span>
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
@@ -2186,30 +2186,29 @@
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
-            API Documentation ပြည့်စုံ
+            <span class="my-text">API Documentation ပြည့်စုံ</span><span class="en-text">Full API Documentation</span>
           </li>
           <li style="color: var(--ink-dim); font-size: 14px; display: flex; align-items: flex-start; gap: 10px;">
             <span style="color: var(--accent-3); flex-shrink: 0;">▸</span>
-            Telegram Support
+            <span class="my-text">Telegram Support</span><span class="en-text">Telegram Support</span>
           </li>
         </ul>
       </div>
 
       <!-- Box 2: Official API with Owner Mail -->
       <div class="api-block no-api">
-        <h3>ကိုယ်ပိုင် Owner Mail API</h3>
+        <h3><span class="my-text">ကိုယ်ပိုင် Owner Mail API</span><span class="en-text">Own Owner Mail API</span></h3>
 
         <div class="fee-line">
           <div class="fee-label">
-            စျေးနှုန်း
+            <span class="my-text">စျေးနှုန်း</span><span class="en-text">Price</span>
             <small>ONE-TIME FEES</small>
           </div>
           <div class="fee-amount">1,000,000 <span class="mmk">MMK</span><span class="fee-usd">≈ $300</span></div>
         </div>
 
         <div class="api-note" style="margin-top: 20px;">
-          ကိုယ်ပိုင် Owner Mail နဲ့ Smile One Official API တိုက်ရိုက် ချိတ်ဆက်အသုံးပြုလိုသူများအတွက် —
-          တစ်ကြိမ်တည်း ပေးချေပြီး ကိုယ်ပိုင် Access ဖြင့် အသုံးပြုနိုင်မှာ ဖြစ်ပါတယ်။
+          <span class="my-text">ကိုယ်ပိုင် Owner Mail နဲ့ Smile One Official API တိုက်ရိုက် ချိတ်ဆက်အသုံးပြုလိုသူများအတွက် — တစ်ကြိမ်တည်း ပေးချေပြီး ကိုယ်ပိုင် Access ဖြင့် အသုံးပြုနိုင်မှာ ဖြစ်ပါတယ်။</span><span class="en-text">For those who want to connect directly with your own Owner Mail to the Smile One Official API — pay once and access with your own credentials.</span>
         </div>
       </div>
     </div>
@@ -2354,68 +2353,50 @@
     <div class="section-head">
       <span class="section-num">06 /</span>
       <span class="section-icon">💎</span>
-      <h2 class="section-title">Why Choose Us</h2>
-      <span class="section-sub">6 KEY ADVANTAGES</span>
+      <h2 class="section-title"><span class="my-text">ဘာကြောင့် Escanor-X ကို ရွေးချယ်သင့်သလဲ?</span><span class="en-text">Why Choose Us?</span></h2>
+      <span class="section-sub"><span class="my-text">အားသာချက် ၆ ခု</span><span class="en-text">6 KEY ADVANTAGES</span></span>
     </div>
 
     <div class="features-grid">
       <div class="feature-card" style="--feat-color: #c8ff3e;">
         <div class="feat-icon">🚀</div>
         <h3 class="feat-title">Fast Setup</h3>
-        <p class="feat-desc">
-          Plan ဝယ်ယူပြီးပါက အမြန်ဆုံး Setup ပြုလုပ်ပေးပြီး လုပ်ငန်းကို ချက်ချင်း
-          စတင်နိုင်အောင် ပံ့ပိုးပေးပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text">ကျွန်တော်တို့ Setup ပြုလုပ်ပေးချိန် ပေမဲ့ ၂၄ နာရီ မကျော်ပါဘူး။ ချက်ချင်း Service ရပြီး မြန်မြန်ဆန်ဆန် Business စတင်နိုင်ပါတယ်။</span><span class="en-text">Setup is completed within 24 hours. Start your business immediately with fast, reliable service.</span></p>
         <span class="feat-num">01</span>
       </div>
 
       <div class="feature-card" style="--feat-color: #3ee8ff;">
         <div class="feat-icon">🔒</div>
         <h3 class="feat-title">Secure & Reliable</h3>
-        <p class="feat-desc">
-          Payment နှင့် Customer Data များကို လုံခြုံစိတ်ချရတဲ့ စနစ်ဖြင့် ကာကွယ်ပေးထား
-          ပါတယ်။ စိတ်ချလက်ချ အသုံးပြုနိုင်ပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text">ဒေတာ လုံခြုံမှုကို ထိပ်တန်း ဦးစားပေးနှင့် Uptime Guarantee ဖြင့် ဝန်ဆောင်မှု ပေးပါတယ်။</span><span class="en-text">Top-tier data security with uptime guarantee ensures your business runs without interruption.</span></p>
         <span class="feat-num">02</span>
       </div>
 
       <div class="feature-card" style="--feat-color: #ff3ea5;">
         <div class="feat-icon">💬</div>
         <h3 class="feat-title">24/7 Support</h3>
-        <p class="feat-desc">
-          Telegram မှတဆင့် အချိန်မရွေး ဆက်သွယ်နိုင်ပြီး အကူအညီတောင်းခံနိုင်ပါတယ်။
-          ပြဿနာရှိရင် မြန်မြန်ဆန်ဆန် ဖြေရှင်းပေးပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text"><span class="my-text">Telegram Support</span><span class="en-text">Telegram Support</span> Team မှ နေ့ည မရွေး ပြဿနာများ ချက်ချင်း ဖြေရှင်းပေးပါတယ်။</span><span class="en-text">Our <span class="my-text">Telegram Support</span><span class="en-text">Telegram Support</span> Team resolves issues instantly, any time of day or night.</span></p>
         <span class="feat-num">03</span>
       </div>
 
       <div class="feature-card" style="--feat-color: #f5c97b;">
         <div class="feat-icon">🔄</div>
         <h3 class="feat-title">Auto Update</h3>
-        <p class="feat-desc">
-          Smile One ၏ စျေးနှုန်းနှင့် ပစ္စည်းအပြောင်းအလဲများကို System မှ အလိုအလျောက်
-          Update ပြုလုပ်ပေးပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text">System Update များကို အလိုအလျောက် ပြုလုပ်ပေးသောကြောင့် Manual Update လုပ်ရန် မလိုပါ။</span><span class="en-text">System updates are handled automatically — no manual updates needed on your end.</span></p>
         <span class="feat-num">04</span>
       </div>
 
       <div class="feature-card" style="--feat-color: #c8ff3e;">
         <div class="feat-icon">🎯</div>
         <h3 class="feat-title">Reseller Friendly</h3>
-        <p class="feat-desc">
-          User များအား Fees ဖြင့် ပြန်လည်ငှားရမ်း အသုံးပြုနိုင်ပြီး Reseller Network
-          တည်ဆောက်ကာ ဝင်ငွေ တိုးပွားနိုင်ပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text">Reseller များအတွက် ပြောင်းလွယ် ပြင်လွယ် Commission စနစ်နှင့် Bot Plan ဖြင့် ဝင်ငွေ တိုးပွားနိုင်ပါတယ်။</span><span class="en-text">Flexible commission system and Reseller Bot Plan designed to help you grow income easily.</span></p>
         <span class="feat-num">05</span>
       </div>
 
       <div class="feature-card" style="--feat-color: #3ee8ff;">
         <div class="feat-icon">🌐</div>
         <h3 class="feat-title">Local + International</h3>
-        <p class="feat-desc">
-          Myanmar Payment Method ၁၄ မျိုးအပြင် USDT (Crypto) ကိုပါ လက်ခံပြီး
-          နိုင်ငံတကာ ဖောက်သည်များကိုလည်း ဝန်ဆောင်မှု ပေးနိုင်ပါတယ်။
-        </p>
+        <p class="feat-desc"><span class="my-text">Myanmar Payment Methods + USDT ဖြင့် Pay ပြုလုပ်နိုင်ပြီး 200+ Games ကို ဝန်ဆောင်မှုပေးနိုင်ပါတယ်။</span><span class="en-text">Supports Myanmar payment methods + USDT, covering 200+ games locally and internationally.</span></p>
         <span class="feat-num">06</span>
       </div>
     </div>
@@ -2426,8 +2407,8 @@
     <div class="section-head">
       <span class="section-num">07 /</span>
       <span class="section-icon">⚡</span>
-      <h2 class="section-title">How It Works</h2>
-      <span class="section-sub">4 SIMPLE STEPS</span>
+      <h2 class="section-title"><span class="my-text">ဘယ်လို အလုပ်လုပ်လဲ?</span><span class="en-text">How It Works</span></h2>
+      <span class="section-sub"><span class="my-text">ရိုးရှင်းတဲ့ အဆင့် ၄ ဆင့်</span><span class="en-text">4 SIMPLE STEPS</span></span>
     </div>
 
     <div class="steps-grid">
@@ -2435,9 +2416,7 @@
         <div class="step-num">01</div>
         <div class="step-icon-wrap">🎯</div>
         <h3 class="step-title">Choose Plan</h3>
-        <p class="step-desc">
-          သင့်လုပ်ငန်းနှင့် ကိုက်ညီတဲ့ Plan တစ်ခုကို ရွေးချယ်ပါ။
-        </p>
+        <p class="step-desc"><span class="my-text">သင့်လုပ်ငန်းနှင့် ကိုက်ညီမယ့် Plan ကို ရွေးချယ်ပါ — Beginner၊ Full Business၊ Bot သို့မဟုတ် API Plan စသည်ဖြင့်။</span><span class="en-text">Choose the plan that fits your business — Beginner, Full Business, Bot or API Plan.</span></p>
         <span class="step-tag">Step 01 · Select</span>
       </div>
 
@@ -2445,9 +2424,7 @@
         <div class="step-num">02</div>
         <div class="step-icon-wrap">💬</div>
         <h3 class="step-title">Contact</h3>
-        <p class="step-desc">
-          Telegram မှတဆင့် ဆက်သွယ်ပြီး အသေးစိတ် ဆွေးနွေးပါ။
-        </p>
+        <p class="step-desc"><span class="my-text">Telegram @EscanorX_Official သို့ ချိတ်ဆက်ပြီး မိမိ‌ရွေးချယ်ထားသော Plan ကို အသိပေးပါ။</span><span class="en-text">Connect with us on Telegram @EscanorX_Official and let us know your chosen plan.</span></p>
         <span class="step-tag">Step 02 · Connect</span>
       </div>
 
@@ -2455,9 +2432,7 @@
         <div class="step-num">03</div>
         <div class="step-icon-wrap">💳</div>
         <h3 class="step-title">Make Payment</h3>
-        <p class="step-desc">
-          ဆွေးနွေးပြီးပါက Myanmar Payment သို့မဟုတ် USDT ဖြင့် ငွေပေးချေပါ။
-        </p>
+        <p class="step-desc"><span class="my-text">KPay, Wave, City, USDT စသည်ဖြင့် ငွေပေးချေပြီး ပြေစာ Screenshot ကို Telegram သို့ ပေးပို့ပါ။</span><span class="en-text">Pay via KPay, Wave, City, USDT etc., then send the payment screenshot to Telegram.</span></p>
         <span class="step-tag">Step 03 · Pay</span>
       </div>
 
@@ -2465,9 +2440,7 @@
         <div class="step-num">04</div>
         <div class="step-icon-wrap">🚀</div>
         <h3 class="step-title">Get Started</h3>
-        <p class="step-desc">
-          Setup ပြီးပါက ချက်ချင်း အသုံးပြုနိုင်ပါမည်။ Support ၂၄/၇ ပံ့ပိုးပေးပါမယ်။
-        </p>
+        <p class="step-desc"><span class="my-text">Setup ပြုလုပ်ပြီးချိန်တွင် Access Credentials ရမည်ဖြစ်ပြီး ချက်ချင်း Service အသုံးပြုနိုင်ပါမည်။</span><span class="en-text">After setup is complete, receive your credentials and start using the service immediately.</span></p>
         <span class="step-tag">Step 04 · Launch</span>
       </div>
     </div>
@@ -2546,9 +2519,9 @@
     </div>
 
     <div class="pay-note">
-      <strong>// Secure & Reliable</strong>
-      လုံခြုံစိတ်ချရပြီး မြန်ဆန်တဲ့ ငွေပေးချေမှုစနစ်များ။ Myanmar Payment Method အားလုံးကို ၂၄/၇
-      လက်ခံပါတယ်။ နိုင်ငံတကာဖောက်သည်များအတွက် USDT ဖြင့် ဆောင်ရွက်ပေးပါသည်။
+      <strong><span class="my-text">// လုံခြုံပြီး ယုံကြည်ရသည်</span><span class="en-text">// Secure & Reliable</span></strong>
+      <span class="my-text">လုံခြုံစိတ်ချရပြီး မြန်ဆန်တဲ့ ငွေပေးချေမှုစနစ်များ။ Myanmar Payment Method အားလုံးကို ၂၄/၇
+      လက်ခံပါတယ်။ နိုင်ငံတကာဖောက်သည်များအတွက် USDT ဖြင့် ဆောင်ရွက်ပေးပါသည်။</span><span class="en-text">Fast and secure payment systems. We accept all Myanmar Payment Methods 24/7. International customers can pay via USDT.</span>
     </div>
   </section>
 
@@ -2557,56 +2530,56 @@
     <div class="section-head">
       <span class="section-num">08 /</span>
       <span class="section-icon">💡</span>
-      <h2 class="section-title">ဘာကြောင့် လတိုင်းပေးရသလဲ?</h2>
+      <h2 class="section-title"><span class="my-text">ဘာကြောင့် လတိုင်းပေးရသလဲ?</span><span class="en-text">Why Monthly Subscription?</span></h2>
       <span class="section-sub">MONTHLY SUBSCRIPTION · WHY</span>
     </div>
 
     <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
 
       <div class="pay-note" style="border-color: var(--accent); background: rgba(200,255,62,0.05);">
-        <strong style="color: var(--accent);">// ရှင်းပြချက်</strong>
-        Website တစ်ခု အမြဲတမ်း Online နေဖို့ နောက်ကွယ်မှာ ကုန်ကျစရိတ်တွေ ရှိနေပါတယ်။
+        <strong style="color: var(--accent);"><span class="my-text">// ရှင်းပြချက်</span><span class="en-text">// Explanation</span></strong>
+        <span class="my-text">Website တစ်ခု အမြဲတမ်း Online နေဖို့ နောက်ကွယ်မှာ ကုန်ကျစရိတ်တွေ ရှိနေပါတယ်။</span><span class="en-text">There are ongoing costs behind keeping a website online at all times.</span>
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
 
         <div class="api-block" style="padding: 24px 28px;">
           <div style="font-size: 24px; margin-bottom: 12px;">🖥️</div>
-          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Server Hosting</h4>
+          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;"><span class="my-text">ဆာဗာ လက်ခံခြင်း</span><span class="en-text">Server Hosting</span></h4>
           <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.7;">
-            သင့် Website 24/7 Online နေဖို့ Server ကို လတိုင်း ငွေပေးထားရပါတယ်။ ငွေပေးမမှသာ Server ဆက်ပွင့်နေမည် ဖြစ်သည်။
+            <span class="my-text">သင့် Website 24/7 Online နေဖို့ Server ကို လတိုင်း ငွေပေးထားရပါတယ်။ ငွေပေးမမှသာ Server ဆက်ပွင့်နေမည် ဖြစ်သည်။</span><span class="en-text">A monthly server fee is required to keep your website online 24/7. The server stays active only while the fee is paid.</span>
           </p>
         </div>
 
         <div class="api-block" style="padding: 24px 28px;">
           <div style="font-size: 24px; margin-bottom: 12px;">🔗</div>
-          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Smile One API</h4>
+          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;"><span class="my-text">Smile One API</span><span class="en-text">Smile One API</span></h4>
           <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.7;">
-            Diamond Topup, Player Check, Product List တွေ အလုပ်လုပ်နိုင်ဖို့ API Maintenance ကို လတိုင်း ထိန်းသိမ်းနေရပါတယ်။
+            <span class="my-text">Diamond Topup, Player Check, Product List တွေ အလုပ်လုပ်နိုင်ဖို့ API Maintenance ကို လတိုင်း ထိန်းသိမ်းနေရပါတယ်။</span><span class="en-text">Monthly API maintenance is required to keep Diamond Topup, Player Check, and Product List features running.</span>
           </p>
         </div>
 
         <div class="api-block" style="padding: 24px 28px;">
           <div style="font-size: 24px; margin-bottom: 12px;">🌐</div>
-          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Domain Renewal</h4>
+          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;"><span class="my-text">ဒိုမိန်း သက်တမ်းတိုး</span><span class="en-text">Domain Renewal</span></h4>
           <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.7;">
-            Domain နာမည် နှစ်တိုင်း သက်တမ်းတိုးဖို့ ကုန်ကျပါတယ်။ ဤကုန်ကျငွေသည် Monthly Fee ထဲတွင် ပါဝင်ပါသည်။
+            <span class="my-text">Domain နာမည် နှစ်တိုင်း သက်တမ်းတိုးဖို့ ကုန်ကျပါတယ်။ ဤကုန်ကျငွေသည် Monthly Fee ထဲတွင် ပါဝင်ပါသည်။</span><span class="en-text">There is an annual cost to renew the domain name. This expense is included within the monthly fee.</span>
           </p>
         </div>
 
         <div class="api-block" style="padding: 24px 28px;">
           <div style="font-size: 24px; margin-bottom: 12px;">🛠️</div>
-          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Support & Update</h4>
+          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px;"><span class="my-text">ပံ့ပိုးမှုနှင့် မွမ်းမံခြင်း</span><span class="en-text">Support & Update</span></h4>
           <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.7;">
-            Smile One ဘက်က ပြောင်းလဲမှုတွေ၊ Bug Fix၊ System Update တွေကို အမြဲ ဆောင်ရွက်ပေးနေပါတယ်။
+            <span class="my-text">Smile One ဘက်က ပြောင်းလဲမှုတွေ၊ Bug Fix၊ System Update တွေကို အမြဲ ဆောင်ရွက်ပေးနေပါတယ်။</span><span class="en-text">We continuously handle Smile One changes, bug fixes, and system updates on your behalf.</span>
           </p>
         </div>
 
       </div>
 
       <div class="pay-note" style="border-color: var(--accent-2); background: rgba(255,62,165,0.05);">
-        <strong style="color: var(--accent-2);">// အနှစ်ချုပ်</strong>
-        လတိုင်း Fee ကို ငွေပေးထားမှသာ သင့် Website အဆက်မပြတ် ပွင့်နေမှာဖြစ်ပြီး Topup Service များ အဆင်ပြေစွာ ဆောင်ရွက်နိုင်မှာ ဖြစ်ပါတယ်။
+        <strong style="color: var(--accent-2);"><span class="my-text">// အနှစ်ချုပ်</span><span class="en-text">// Summary</span></strong>
+        <span class="my-text">လတိုင်း Fee ကို ငွေပေးထားမှသာ သင့် Website အဆက်မပြတ် ပွင့်နေမှာဖြစ်ပြီး Topup Service များ အဆင်ပြေစွာ ဆောင်ရွက်နိုင်မှာ ဖြစ်ပါတယ်။</span><span class="en-text">Only by paying the monthly fee will your website remain online continuously and your Topup Service run smoothly.</span>
       </div>
 
     </div>
@@ -2617,40 +2590,40 @@
     <div class="section-head">
       <span class="section-num">09 /</span>
       <span class="section-icon">🌍</span>
-      <h2 class="section-title">Domain အကြောင်း</h2>
+      <h2 class="section-title"><span class="my-text">Domain အကြောင်း</span><span class="en-text">About Domains</span></h2>
       <span class="section-sub">SUBDOMAIN · CUSTOM DOMAIN</span>
     </div>
 
     <div style="max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
 
       <div class="card" style="padding: 32px;">
-        <span class="card-tag">Free · ပါဝင်ပြီးသား</span>
+        <span class="card-tag"><span class="my-text">Free · ပါဝင်ပြီးသား</span><span class="en-text">Free · Included</span></span>
         <h3 class="card-title" style="font-size: 20px; margin-bottom: 16px;">Subdomain</h3>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; color: var(--accent); background: rgba(200,255,62,0.07); border: 1px solid rgba(200,255,62,0.2); border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; word-break: break-all;">
           yourname.escanorx.com
         </div>
         <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.8;">
-          Plan ဝယ်ယူသည်နှင့် အခမဲ့ ရရှိမည်ဖြစ်သည်။
-          <code style="color: var(--accent-3); font-family: 'JetBrains Mono', monospace; font-size: 13px;">yourname</code> နေရာတွင် မိမိနှစ်သက်ရာ နာမည်ကို ရွေးချယ်နိုင်ပါသည်။
+          <span class="my-text">Plan ဝယ်ယူသည်နှင့် အခမဲ့ ရရှိမည်ဖြစ်သည်။</span><span class="en-text">Included free with any plan purchase.</span>
+          <code style="color: var(--accent-3); font-family: 'JetBrains Mono', monospace; font-size: 13px;">yourname</code> <span class="my-text">နေရာတွင် မိမိနှစ်သက်ရာ နာမည်ကို ရွေးချယ်နိုင်ပါသည်</span><span class="en-text">— replace <code style="color: var(--accent-3); font-family: 'JetBrains Mono', monospace; font-size: 13px;">yourname</code> with any name you like</span>。
         </p>
         <div style="margin-top: 16px; padding-top: 16px; border-top: 1px dashed rgba(255,255,255,0.1); color: var(--ink-dim); font-size: 13px;">
-          ဥပမာ —<br/>
+          <span class="my-text">ဥပမာ —</span><span class="en-text">Example —</span><br/>
           <span style="color: var(--accent-3); font-family: 'JetBrains Mono', monospace;">kiwii.escanorx.com</span><br/>
           <span style="color: var(--accent-3); font-family: 'JetBrains Mono', monospace;">mmgamer.escanorx.com</span>
         </div>
       </div>
 
       <div class="card featured" style="padding: 32px;">
-        <span class="card-tag gold">ထပ်ဆောင်း · Optional</span>
+        <span class="card-tag gold"><span class="my-text">ထပ်ဆောင်း · Optional</span><span class="en-text">Add-on · Optional</span></span>
         <h3 class="card-title" style="font-size: 20px; margin-bottom: 16px;">Custom Domain</h3>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; color: var(--gold); background: rgba(245,201,123,0.07); border: 1px solid rgba(245,201,123,0.2); border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; word-break: break-all;">
           www.yourbusiness.com
         </div>
         <p style="color: var(--ink-dim); font-size: 14px; line-height: 1.8;">
-          မိမိပိုင် Domain နာမည် ဝယ်ယူပြီး ချိတ်ဆက်လိုပါက Setup ပြုလုပ်ပေးနိုင်ပါသည်။ Domain ဝယ်ယူရန် ကုန်ကျငွေမှာ Client ဘက်မှ ကျခံရမည် ဖြစ်သည်။
+          <span class="my-text">မိမိပိုင် Domain နာမည် ဝယ်ယူပြီး ချိတ်ဆက်လိုပါက Setup ပြုလုပ်ပေးနိုင်ပါသည်။ Domain ဝယ်ယူရန် ကုန်ကျငွေမှာ Client ဘက်မှ ကျခံရမည် ဖြစ်သည်။</span><span class="en-text">If you want to connect your own custom domain, we will set it up for you. The domain purchase cost is borne by the client.</span>
         </p>
         <div class="api-note" style="margin-top: 16px;">
-          Domain ဝယ်ယူမည်ဆိုပါက Telegram မှ ဆက်သွယ်၍ Setup ပြုလုပ်ပေးပါမည်။
+          <span class="my-text">Domain ဝယ်ယူမည်ဆိုပါက Telegram မှ ဆက်သွယ်၍ Setup ပြုလုပ်ပေးပါမည်။</span><span class="en-text">Contact us on Telegram and we will handle the domain setup for you.</span>
         </div>
       </div>
 
@@ -2663,72 +2636,71 @@
       <span class="section-num">10 /</span>
       <span class="section-icon">❓</span>
       <h2 class="section-title">FAQ</h2>
-      <span class="section-sub">FREQUENTLY ASKED</span>
+      <span class="section-sub"><span class="my-text">မကြာခဏ မေးလေ့ရှိသောမေးခွန်းများ</span><span class="en-text">FREQUENTLY ASKED QUESTIONS</span></span>
     </div>
 
     <div class="faq-list">
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">01</span>
-          <span class="faq-q-text">Setup ပြီးဖို့ ဘယ်လောက် ကြာမလဲ?</span>
+          <span class="faq-q-text"><span class="my-text">Setup ပြီးဖို့ ဘယ်လောက် ကြာမလဲ?</span><span class="en-text">How long does setup take?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">Plan အလိုက် Setup အချိန် မတူညီပါ။ Bot Plan က အမြန်ဆုံး Setup ပြုလုပ်ပေးနိုင်ပြီး၊ Full Business Plan နှင့် API Setup တို့မှာ အသေးစိတ် ပိုဆောင်ရွက်ရတဲ့အတွက် အချိန် ပိုကြာနိုင်ပါတယ်။ Setup ပြီးပါက ချက်ချင်း အသုံးပြုနိုင်ပါမည်။</div>
+        <div class="faq-answer"><span class="my-text">Plan အလိုက် Setup အချိန် မတူညီပါ။ Bot Plan က အမြန်ဆုံး Setup ပြုလုပ်ပေးနိုင်ပြီး၊ Full Business Plan နှင့် API Setup တို့မှာ အသေးစိတ် ပိုဆောင်ရွက်ရတဲ့အတွက် အချိန် ပိုကြာနိုင်ပါတယ်။ Setup ပြီးပါက ချက်ချင်း အသုံးပြုနိုင်ပါမည်။</span><span class="en-text">Setup time varies by plan. Bot Plans are the fastest, while Full Business and API Plans take slightly longer due to detailed configuration. Once setup is done, you can use the service immediately.</span></div>
       </details>
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">02</span>
-          <span class="faq-q-text">Plan ပြောင်း (Upgrade/Downgrade) ချင်ရင် ရလား?</span>
+          <span class="faq-q-text"><span class="my-text">Plan ပြောင်း (Upgrade/Downgrade) ချင်ရင် ရလား?</span><span class="en-text">Can I upgrade or downgrade my plan?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">ရပါတယ်ခင်ဗျာ။ Telegram မှတဆင့် ဆက်သွယ်ပြီး Plan Upgrade/Downgrade ပြုလုပ်နိုင်ပါတယ်။ ကျန်ရှိနေသော Plan အချိန်ကို ထည့်တွက်ပြီး ကွာခြားငွေကြေးကိုသာ ပေးချေဖို့ လိုပါတယ်။</div>
+        <div class="faq-answer"><span class="my-text">ရပါတယ်ခင်ဗျာ။ Telegram မှတဆင့် ဆက်သွယ်ပြီး Plan Upgrade/Downgrade ပြုလုပ်နိုင်ပါတယ်။ ကျန်ရှိနေသော Plan အချိန်ကို ထည့်တွက်ပြီး ကွာခြားငွေကြေးကိုသာ ပေးချေဖို့ လိုပါတယ်။</span><span class="en-text">Yes! Contact us via Telegram to upgrade or downgrade your plan. Only the price difference based on remaining time needs to be paid.</span></div>
       </details>
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">03</span>
-          <span class="faq-q-text">Payment ပြီးတာနဲ့ ဘယ်လောက်ကြာ Confirm ဖြစ်လဲ?</span>
+          <span class="faq-q-text"><span class="my-text">Payment ပြီးတာနဲ့ ဘယ်လောက်ကြာ Confirm ဖြစ်လဲ?</span><span class="en-text">How long after payment until confirmation?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">Payment ပြုလုပ်ပြီး ပြေစာ Screenshot ကို Telegram သို့ ပေးပို့ပြီးပါက အမြန်ဆုံး Confirm ပြုလုပ်ပေးပါမယ်။ Confirm ပြီးပါက Setup အလုပ်ကို ချက်ချင်း စတင်ပေးပါတယ်။</div>
+        <div class="faq-answer"><span class="my-text">Payment ပြုလုပ်ပြီး ပြေစာ Screenshot ကို Telegram သို့ ပေးပို့ပြီးပါက အမြန်ဆုံး Confirm ပြုလုပ်ပေးပါမယ်။ Confirm ပြီးပါက Setup အလုပ်ကို ချက်ချင်း စတင်ပေးပါတယ်။</span><span class="en-text">Once you send the payment screenshot to Telegram, we will confirm as quickly as possible and begin setup immediately.</span></div>
       </details>
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">04</span>
-          <span class="faq-q-text">Bot သို့မဟုတ် Website မှာ ပြဿနာရှိရင် ဘာလုပ်ရမလဲ?</span>
+          <span class="faq-q-text"><span class="my-text">Bot သို့မဟုတ် Website မှာ ပြဿနာရှိရင် ဘာလုပ်ရမလဲ?</span><span class="en-text">What if my bot or website has issues?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">Telegram Support မှ အချိန်မရွေး (၂၄/၇) ဆက်သွယ်အကူအညီတောင်းခံနိုင်ပါတယ်။ Technical Issue များကို မြန်မြန်ဆန်ဆန် ဖြေရှင်းပေးပါတယ်။ ပြဿနာအသေးစိတ်ကို Screenshot နဲ့အတူ ပေးပို့ပေးရင် ပိုမြန်ပါတယ်။</div>
+        <div class="faq-answer"><span class="my-text"><span class="my-text">Telegram Support</span><span class="en-text">Telegram Support</span> မှ အချိန်မရွေး (၂၄/၇) ဆက်သွယ်အကူအညီတောင်းခံနိုင်ပါတယ်။ Technical Issue များကို မြန်မြန်ဆန်ဆန် ဖြေရှင်းပေးပါတယ်။ ပြဿနာအသေးစိတ်ကို Screenshot နဲ့အတူ ပေးပို့ပေးရင် ပိုမြန်ပါတယ်။</span><span class="en-text">Contact <span class="my-text">Telegram Support</span><span class="en-text">Telegram Support</span> anytime (24/7) and technical issues will be resolved quickly. Sending a screenshot with the problem description helps speed things up.</span></div>
       </details>
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">05</span>
-          <span class="faq-q-text">Smile One API ရှိသူနဲ့ မရှိသူ ဘာကွာလဲ?</span>
+          <span class="faq-q-text"><span class="my-text">Smile One API ရှိသူနဲ့ မရှိသူ ဘာကွာလဲ?</span><span class="en-text">What is the difference with and without Smile One API?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">API ရှိပြီးသား ဖောက်သည်များက Setup Fee (1,000,000 MMK တစ်ကြိမ်) + Monthly Maintenance (30,000 MMK) ပေးပြီး တိုက်ရိုက် ချိတ်ဆက်အသုံးပြုနိုင်ပါတယ်။ API မရှိသူများအတွက်မူ ကျွန်တော်တို့ဘက်က API ချိတ်ဆက်ပေးပြီး၊ သက်ဆိုင်ရာ Bot Plan အလိုက် Fees ဖြင့် အသုံးပြုနိုင်အောင် စီစဉ်ပေးပါတယ်။</div>
+        <div class="faq-answer"><span class="my-text">API ရှိပြီးသား ဖောက်သည်များက Setup Fee (1,000,000 MMK တစ်ကြိမ်) + Monthly Maintenance (30,000 MMK) ပေးပြီး တိုက်ရိုက် ချိတ်ဆက်အသုံးပြုနိုင်ပါတယ်။ API မရှိသူများအတွက်မူ ကျွန်တော်တို့ဘက်က API ချိတ်ဆက်ပေးပြီး၊ သက်ဆိုင်ရာ Bot Plan အလိုက် Fees ဖြင့် အသုံးပြုနိုင်အောင် စီစဉ်ပေးပါတယ်။</span><span class="en-text">Customers with their own Smile One API pay a one-time Setup Fee (1,000,000 MMK) + Monthly Maintenance (30,000 MMK) for direct access. Without an API, we connect on your behalf and you use our Bot Plans at the respective fees.</span></div>
       </details>
       <details class="faq-item">
         <summary class="faq-question">
           <span class="faq-q-num">06</span>
-          <span class="faq-q-text">Reseller Plan က ဘယ်လို အလုပ်လုပ်လဲ?</span>
+          <span class="faq-q-text"><span class="my-text">Reseller Plan က ဘယ်လို အလုပ်လုပ်လဲ?</span><span class="en-text">How does the Reseller Plan work?</span></span>
           <span class="faq-toggle"></span>
         </summary>
-        <div class="faq-answer">Reseller Bot Plan (80,000 MMK/လ) ဝယ်ယူပြီးလျှင် User များအား Fees ဖြင့် ပြန်လည် ငှားရမ်းအသုံးပြုနိုင်ပါတယ်။ ဆိုလိုသည်မှာ — သင်က ကိုယ်ပိုင် Reseller Network တည်ဆောက်ကာ Subscriber များထံမှ ဝင်ငွေ တိုးပွားရရှိနိုင်တဲ့ စနစ်ပါ။</div>
+        <div class="faq-answer"><span class="my-text">Reseller Bot Plan (80,000 MMK/လ) ဝယ်ယူပြီးလျှင် User များအား Fees ဖြင့် ပြန်လည် ငှားရမ်းအသုံးပြုနိုင်ပါတယ်။ ဆိုလိုသည်မှာ — သင်က ကိုယ်ပိုင် Reseller Network တည်ဆောက်ကာ Subscriber များထံမှ ဝင်ငွေ တိုးပွားရရှိနိုင်တဲ့ စနစ်ပါ။</span><span class="en-text">Purchase the Reseller Bot Plan (80,000 MMK/month) and rent access to users with your own fees. Build your own Reseller Network and earn growing income from subscribers.</span></div>
       </details>
     </div>
 
     <p class="faq-cta">
-      အခြားမေးခွန်းများရှိပါက <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener">Telegram</a> မှ တိုက်ရိုက် ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်ခင်ဗျာ
+      <span class="my-text">အခြားမေးခွန်းများရှိပါက Telegram မှ တိုက်ရိုက် ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်ခင်ဗျာ</span><span class="en-text">For other questions, contact us directly on Telegram anytime.</span> <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener">@EscanorX_Official</a>
     </p>
   </section>
 
   <!-- CTA -->
   <section class="cta" id="contact">
     <div class="cta-tag">// Get In Touch</div>
-    <h2>အသေးစိတ် ဆွေးနွေးလိုပါသလား?</h2>
+    <h2><span class="my-text">အသေးစိတ် ဆွေးနွေးလိုပါသလား?</span><span class="en-text">Want to Discuss in Detail?</span></h2>
     <p>
-      မည်သည့်အချိန်မဆို ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်ခင်ဗျာ။ သင့်လုပ်ငန်းနဲ့ ကိုက်ညီမယ့်
-      အကောင်းဆုံး Plan ကို တိုင်ပင်ပေးပါမယ်။
+      <span class="my-text">မည်သည့်အချိန်မဆို ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်ခင်ဗျာ။ သင့်လုပ်ငန်းနဲ့ ကိုက်ညီမယ့် အကောင်းဆုံး Plan ကို တိုင်ပင်ပေးပါမယ်။</span><span class="en-text">Contact us anytime. We will help you find the best plan that fits your business needs.</span>
     </p>
     <a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener" class="cta-btn">Contact on Telegram →</a>
   </section>
@@ -2744,31 +2716,31 @@
       </div>
 
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4><span class="my-text">လင့်များ</span><span class="en-text">Quick Links</span></h4>
         <ul>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how">How It Works</a></li>
+          <li><a href="#pricing"><span class="my-text">စျေးနှုန်း</span><span class="en-text">Pricing</span></a></li>
+          <li><a href="#games"><span class="my-text">ဂိမ်းများ</span><span class="en-text">Games</span></a></li>
+          <li><a href="#features"><span class="my-text">အင်္ဂါရပ်များ</span><span class="en-text">Features</span></a></li>
+          <li><a href="#how"><span class="my-text">လုပ်ဆောင်ပုံ</span><span class="en-text">How It Works</span></a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Resources</h4>
+        <h4><span class="my-text">အရင်းအမြစ်များ</span><span class="en-text">Resources</span></h4>
         <ul>
-          <li><a href="#payment">Payment Methods</a></li>
-          <li><a href="#why-monthly">ဘာကြောင့် Monthly?</a></li>
-          <li><a href="#domain-info">Domain အကြောင်း</a></li>
+          <li><a href="#payment"><span class="my-text">ငွေပေးချေမှုနည်းလမ်းများ</span><span class="en-text">Payment Methods</span></a></li>
+          <li><a href="#why-monthly"><span class="my-text">ဘာကြောင့် Monthly?</span><span class="en-text">Why Monthly?</span></a></li>
+          <li><a href="#domain-info"><span class="my-text">Domain အကြောင်း</span><span class="en-text">About Domains</span></a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Connect</h4>
+        <h4><span class="my-text">ဆက်သွယ်ရန်</span><span class="en-text">Connect</span></h4>
         <ul>
           <li><a href="https://t.me/EscanorX_Official" target="_blank" rel="noopener">Telegram</a></li>
-          <li><a href="#contact">Get in Touch</a></li>
+          <li><a href="#contact"><span class="my-text">ဆက်သွယ်မည်</span><span class="en-text">Get in Touch</span></a></li>
         </ul>
       </div>
     </div>
@@ -2862,17 +2834,21 @@
 
 
   <script>
-    function toggleLang() {
-      const body = document.body;
-      const btn = document.getElementById('langBtn');
-      if (body.classList.contains('lang-en')) {
-        body.classList.remove('lang-en');
-        btn.textContent = '🇬🇧 EN';
-      } else {
-        body.classList.add('lang-en');
-        btn.textContent = '🇲🇲 MY';
+    document.addEventListener('DOMContentLoaded', function() {
+      var btn = document.getElementById('langBtn');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          var body = document.body;
+          if (body.classList.contains('lang-en')) {
+            body.classList.remove('lang-en');
+            btn.textContent = '🇬🇧 EN';
+          } else {
+            body.classList.add('lang-en');
+            btn.textContent = '🇲🇲 MY';
+          }
+        });
       }
-    }
+    });
   </script>
 
 </body>
